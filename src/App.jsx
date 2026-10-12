@@ -1,5 +1,5 @@
 export default function App() {
   return (
-    <p>App</p>
+    <p className="font-bold text-red-500">App</p>
   );
 }
