@@ -1,16 +1,20 @@
-# React + Vite
+# Streakly
+- Build habits that stick.
+- Streakly is a full-stack habit tracker built with React and a Node.js + Express REST API. Create habits, check them off each day, and track your streaks with a monthly calendar heatmap, all backed by PostgreSQL on Supabase.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚧 **Currently in progress. Live demo coming soon!**
 
-Currently, two official plugins are available:
+## Features
+- **Auth**: sign up or log in securely with Supabase Auth, with every API request verified on the server
+- **Habits**: create and delete habits to build your daily routine
+- **Daily check-ins**: check off habits each day, or undo a check-in
+- **Streaks**: see your current streak and best streak for every habit
+- **Monthly heatmap**: view your progress on a calendar, with completion counts for the month
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/): REST API and auth middleware
+- [PostgreSQL](https://www.postgresql.org/): database, with custom SQL queries for streaks and stats
+- [Supabase](https://supabase.com/): authentication and database hosting
+- [Tailwind CSS](https://tailwindcss.com/): styling
+- [Vercel](https://vercel.com/): hosting and deployment
