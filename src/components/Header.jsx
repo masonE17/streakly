@@ -1,16 +1,16 @@
 import logo from "../assets/Streakly.png";
 
-export default function Header(isToday, isStats) {
+export default function Header({ isToday, isStats }) {
     return (
         // Header
-        <div className="w-full bg-white flex justify-center items-center py-3">
+        <div className="sticky top-0 z-50 w-full bg-white flex justify-center items-center py-3 border-b border-[#DDE0D8]">
             <div className="w-full max-w-280 flex flex-row justify-between items-center p-1">
                 <div className="flex flex-row justify-center items-center gap-1">
                     <img src={ logo } alt="Streakly Logo" className="w-12 h-12" />
                     <p className="text-[#1B1F1A] font-semibold text-[24px]">Streakly</p>
                 </div>
                 <div className="w-full max-w-50 flex flex-row justify-center items-center gap-3">
-                    <div className="w-full max-w-15 flex flex-col justify-center items-center">
+                    <div className="w-full max-w-15 group flex flex-col justify-center items-center">
                         {isToday ? (
                             <>
                                 <p className="text-[#1B1F1A] font-semibold text-[18px]">Today</p>
