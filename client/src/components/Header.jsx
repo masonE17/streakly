@@ -1,4 +1,5 @@
 import logo from "../assets/Streakly.png";
+import { Link } from "react-router";
 
 export default function Header({ isToday, isStats }) {
     return (
@@ -18,7 +19,9 @@ export default function Header({ isToday, isStats }) {
                             </>
                         ) : (
                             <>
-                                <p className="group-hover:text-[#1B1F1A] text-[#5A6058] font-semibold text-[18px]">Today</p>
+                                <Link to="/">
+                                    <p className="group-hover:text-[#1B1F1A] text-[#5A6058] font-semibold text-[18px]">Today</p>
+                                </Link>
                                 <div className="border-transparent group-hover:border-[#2F6B47] w-full border border-b "></div>
                             </>
                         )}
@@ -31,7 +34,9 @@ export default function Header({ isToday, isStats }) {
                             </>
                         ) : (
                             <>
-                                <p className="group-hover:text-[#1B1F1A] text-[#5A6058] font-semibold text-[18px]">Stats</p>
+                                <Link to="/stats">
+                                    <p className="group-hover:text-[#1B1F1A] text-[#5A6058] font-semibold text-[18px]">Stats</p>
+                                </Link>
                                 <div className="border-transparent group-hover:border-[#2F6B47] w-full border border-b "></div>
                             </>
                         )}
