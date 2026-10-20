@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default function Header({ isToday, isStats }) {
     return (
         // Header
-        <div className="sticky top-0 z-50 w-full bg-white flex justify-center items-center py-3 border-b border-[#DDE0D8]">
+        <div className="sticky top-0 z-50 w-full bg-[#FFFFFF] flex justify-center items-center py-3 border-b border-[#DDE0D8]">
             <div className="w-full max-w-280 flex flex-row justify-between items-center p-1">
                 <div className="flex flex-row justify-center items-center gap-1">
                     <img src={ logo } alt="Streakly Logo" className="w-12 h-12" />
