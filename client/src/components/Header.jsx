@@ -41,6 +41,9 @@ export default function Header({ isToday, isStats }) {
                             </>
                         )}
                     </div>
+                    <Link to="/join">
+                        <p className="group-hover:text-[#1B1F1A] text-[#5A6058] font-semibold text-[18px]">Join</p>
+                    </Link>
                 </div>
                 <div className="flex flex-row justify-center items-center gap-2 pr-2">
                     <p className="text-[#5A6058] font-semibold text-[18px]">Mason</p>
